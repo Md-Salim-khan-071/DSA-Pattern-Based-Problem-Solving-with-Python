@@ -6,9 +6,6 @@ def threeSumClosest(nums,target):
     i=0
     result = 0
     while(i <= n-3):
-        if (i>0 and nums[i] == nums[i-1]):
-            i+=1
-            continue
         j=i+1
         k=n-1
         while(j<k):
@@ -17,8 +14,8 @@ def threeSumClosest(nums,target):
                 k -= 1
 
             elif(result_sum<target):
-                result += 1
-                j += 1
+                result += (k-j)
+                j =+ 1
 
             else:
                 k -= 1
@@ -26,7 +23,7 @@ def threeSumClosest(nums,target):
         i+=1
     return result
 
-nums = [-2,0,1,3,-1]
+nums = [-2,0,1,3]
 target = 2
 result = threeSumClosest(nums,target)
 print(result)
