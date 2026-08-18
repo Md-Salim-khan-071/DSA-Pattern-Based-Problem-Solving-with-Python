@@ -15,4 +15,5 @@ Prepare for software engineering interviews and online assessments
 Maintain consistency through regular practice
 
 📚 Topics Covered
-none  - yet
+
+Two Pointers 
